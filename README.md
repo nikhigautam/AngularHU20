@@ -13,7 +13,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Installing the packages
 
-Run `npm install` install the npm packages described in the package.json
+Run `npm install package` install the npm packages described in the package.json
 
 ## Running unit tests
 
