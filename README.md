@@ -2,9 +2,8 @@
 # HUAngularProject2021
 
 ## Get Started
-Run git clone https://git.hashedin.com/supriya.gm/huangular2021.git.
-
-`cd intern-angular`
+Run git clone https://git.hashedin.com/supriya.gm/huangular2021.git
+Go to `cd huangular2021`
 
 
 ## Development server
