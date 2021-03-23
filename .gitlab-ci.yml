@@ -38,7 +38,7 @@ gcloud_deploy:
   - "echo $CI_PROJECT_NAME"
   - |
     cat <<EOF >> app.yaml
-    runtime: python38
+    runtime: python27
     api_version: 1
     threadsafe: true
     handlers:
