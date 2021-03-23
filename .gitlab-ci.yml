@@ -78,7 +78,7 @@ gcloud_deploy:
   
   script:
   - gcloud auth activate-service-account --key-file $CI_PIPELINE_ID.json
-  - gcloud --project hu18-groupa-angular app deploy --version v1 target/*.jar --appyaml app.yaml
+  - gcloud --project hu18-groupa-angular app deploy --version v1 --appyaml app.yaml
   - url=$(gcloud app services browse $ServiceName --no-launch-browser --project hu18-groupa-angular)
   - echo $url
   
