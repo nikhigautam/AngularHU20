@@ -28,7 +28,6 @@ gcloud_deploy:
   environment: staging
   only:
   - master
-  - gitlab-ci
   
   before_script:
   - "echo ${GITLAB_USER_LOGIN/./-}"
