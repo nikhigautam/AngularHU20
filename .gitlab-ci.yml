@@ -14,6 +14,8 @@ cache:
 generate_artifact:
  image: node:12-alpine
  stage: build_angular
+ only:
+ - master
  script:
   - npm install -g @angular/cli --silent
   - npm install --silent
@@ -28,6 +30,7 @@ gcloud_deploy:
   environment: staging
   only:
   - master
+
   before_script:
   - "echo ${GITLAB_USER_LOGIN/./-}"
   - "Servicename=${GITLAB_USER_LOGIN/./-}"
@@ -38,6 +41,7 @@ gcloud_deploy:
   - |
     cat <<EOF >> app.yaml
     runtime: python27
+    service: $ServiceName
     api_version: 1
     threadsafe: true
     handlers:
