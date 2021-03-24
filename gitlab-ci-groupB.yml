@@ -28,7 +28,7 @@ gcloud_deploy:
   environment: staging
   only:
   - master
-  - build
+  - gitlab-ci
   
   before_script:
   - "echo ${GITLAB_USER_LOGIN/./-}"
@@ -40,6 +40,7 @@ gcloud_deploy:
   - |
     cat <<EOF >> app.yaml
     runtime: python27
+    service: $ServiceName
     api_version: 1
     threadsafe: true
     handlers:
