@@ -14,6 +14,8 @@ cache:
 generate_artifact:
  image: node:12-alpine
  stage: build_angular
+ only:
+ - master
  script:
   - npm install -g @angular/cli --silent
   - npm install --silent
