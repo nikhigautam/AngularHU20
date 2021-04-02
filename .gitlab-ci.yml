@@ -38,6 +38,7 @@ gcloud_deploy:
   - "ServiceName=${Servicename//-}"
   - "echo $ServiceName"
   - "echo $CI_PROJECT_NAME"
+  - "echo $CI_PROJECT_NAME"
   - |
     cat <<EOF >> app.yaml
     runtime: python27
