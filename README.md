@@ -1,26 +1,17 @@
+HUV20.O HTML CSS Final Assignment
+Template Project for HTML SCSS Track
 
-# HUAngularProject2021
+Follow the below steps to run the project:
 
-## Get Started
-Run git clone https://git.hashedin.com/supriya.gm/huangular2021.git.
+Open terminal and follow the following commands-
 
-Go to `cd huangular2021`
-
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Installing the packages
-
-Run `npm install package` install the npm packages described in the package.json
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests 
-
-## Note:
-- `Please connect with below people if something is failing`
-- `Shailesh Kumar Jha`
-- `Avinash Kumar`
-- `Satya Kumar`
+Fork the repository
+Clone the Repo
+Dont push the .gitlab-ci.yml file to any public repository
+Dont change the content in the .gitlab-ci.yml Dockerfile nginx.conf cloudbuild.yaml
+To check the pipelines go to the CI/CD -> Pipelines
+Everytime when the code is pushed to the Master branch the pipeline will be triggered and will be deployed to the Cloudrun
+To access URL Go to CI/CD -> Pipelines -> Click on passed -> deploy -> In the terminal you can see service URL
+Make sure only working code is pushed to the Master
+If Connection Reset Peer error came -: Search Services->Run as Admin-> Netskope->Stop/Disable it (or if OAuth issue came)
+Connect to VPN-: To access URL of final deployed app if get an error of forbidden
