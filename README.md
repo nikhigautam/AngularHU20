@@ -1,5 +1,5 @@
-HUV20.O HTML CSS Final Assignment
-Template Project for HTML SCSS Track
+HUV20.O Angular Final Assignment
+Template Project for Angular Track
 
 Follow the below steps to run the project:
 
