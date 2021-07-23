@@ -1,6 +1,6 @@
-# HUV20.O HTML CSS Final Assignment
+# HUV20.O Angular Final Assignment
 
-Template Project for HTML SCSS Track
+Template Project for Angular Track
 
 
 ## CI/CD 
