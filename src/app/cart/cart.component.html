@@ -1,0 +1,94 @@
+<div class="black-bar">
+    <div class="outer-profile">
+        <p class="profile">Shopping Cart</p>
+    </div>
+    <img class="react-logo" src="/asset/Mask Group 1.png" alt="">
+    <div class="blank"></div>
+</div>
+<button type="button" class="btn btn-dark" (click)="onclick1()">Dark</button>
+<div class="below">
+    <p class="twocourses">{{carry1.length}} Courses in Cart</p>
+</div>
+<div class="foot">
+    <div class="empty">
+
+    </div>
+    <div class="course-template">
+        <div class="upper">
+            <div class="react" *ngFor="let item of carry1; let i = index">
+                <div class="grey-box">
+                </div>
+                <div class="two">
+                    <strong>{{item.courseDescription}}</strong>
+                    <p>{{item.courseCreator}}</p>
+
+                </div>
+                <div class="spa">
+                </div>
+                <div class="del">
+                    <a href="">
+                        <p>Move to Wishlist</p>
+                    </a>
+                    <b>{{item.price}}</b>
+                    <a class="delicon" (click)="ondel(item)" style="cursor: pointer;"><img src="../../assets/noun_Delete_3715928.svg" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fotter">
+            <div class="rec-cou">
+                <p>Recommended Courses</p>
+            </div>
+            <div class="recc">
+                <div class="grey-box"></div>
+                <div class="three">
+                    <strong>Responsive Design Course XYZ How
+                  to design responsive templates</strong>
+                    <img class="react1" src="/asset/Group-37.svg" alt="">
+                    <img class="react2" src="/asset/Group-37.svg" alt="">
+
+                </div>
+                <p class="joseph">Joseph Marie</p>
+                <div class="rest">
+                    <img src="/asset/Group-35.svg" alt="" class="star">
+                    <b>Rs 563/-</b>
+                    <s>Rs 932/-</s>
+                    <input type="button" class="Add" value="ADD TO CART">
+                    <img src="/asset/Path-20.svg" class="arrow">
+                </div>
+            </div>
+
+            <div class="recc">
+                <div class="grey-box"></div>
+                <div class="three">
+                    <strong>Responsive Design Course XYZ How
+                  to design responsive templates</strong>
+                    <img class="react1" src="/asset/Group-37.svg" alt="">
+                    <img class="react2" src="/asset/Group-37.svg" alt="">
+
+                </div>
+                <p class="joseph">Joseph Marie</p>
+                <div class="rest">
+                    <img src="/asset/Group-35.svg" alt="" class="star">
+                    <b>Rs 563/-</b>
+                    <s>Rs 932/-</s>
+                    <input type="button" class="Add" value="ADD TO CART">
+                    <img src="/asset/Path-20.svg" class="arrow">
+                </div>
+            </div>
+            <div class="space">
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="cart">
+
+        <p>Total Amount</p>
+        <b>{{sum}}</b>
+        <input type="button" value="CHECKOUT">
+
+    </div>
+</div>

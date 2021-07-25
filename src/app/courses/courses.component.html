@@ -1,0 +1,74 @@
+<div>
+    <div class="black-bar">
+        <div class="outer-profile">
+            <p class="profile">Discover latest Courses on React</p>
+        </div>
+        <img class="react-logo" src="../../assets/Mask Group 1.png" alt="">
+        <div class="blank"></div>
+    </div>
+    <br>
+    <div class="below">
+        <p>All Courses</p>
+        <div class="filter">
+            <img src="../../assets/Group 71.svg" alt="Courses">
+        </div>
+
+        <!-- <input type="text" placeholder="Search Here">
+        <img class="search" src="../../assets/Group 35.svg"> -->
+
+    </div>
+    <div class="foot">
+        <div class="empty">
+
+        </div>
+        <div id="courses-template">
+            <!-- <button type="button" class="btn btn-dark" (click)="onclick()">Dark</button> -->
+
+            <!-- <ul *ngFor="let c of courses">
+                <li> {{c.id}}</li>
+            </ul> -->
+
+            <div class="react" *ngFor="let c of courses | paginate: { itemsPerPage: 4, currentPage: p }">
+                <div class="grey-box"></div>
+                <div class="three">
+                    <strong>
+                      {{c.courseDescription}}
+                  </strong>
+                    <div class="taggs" *ngFor="let i of c.tags">
+                        {{ i }}
+                    </div>
+
+                </div>
+                <p class="joseph">
+                    {{c.courseCreator}}
+                </p>
+                <div class="rest">
+                    <a class="star" (click)="onWish(c)" style="cursor: pointer;"><img src="../../assets/Path 28.svg" alt="" class=""></a>
+                    <b>{{c.price - (c.price*c.discount)/100}}</b>
+
+                    <p><s>{{c.price}}</s> </p>
+                    <input type="button" class="Add" value="ADD TO CART" (click)="onclick(c)">
+                    <a class="arrow" routerLink="/about-page"><img src="../../assets/Path 20.svg"></a>
+                </div>
+            </div>
+            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+            <!-- <div class="fotter">
+                <ul class="pagination pagination-sm">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="cart">
+            <!-- <p>YOUR CART DETAILS</p>
+            <hr class="rule" /> -->
+            <!-- <app-cart></app-cart> -->
+            <app-smallcart></app-smallcart>
+
+        </div>
+    </div>
+
+</div>

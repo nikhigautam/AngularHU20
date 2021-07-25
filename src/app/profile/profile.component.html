@@ -1,0 +1,130 @@
+<div class="black-bar">
+    <div class="outer-profile">
+        <p class="profile">My Profile</p>
+    </div>
+    <img class="react-logo" src="../../assets/Mask Group 1.png" alt="">
+    <img class="react-logo-m" src="../../assets/BG.png" alt="">
+    <div class="blank"></div>
+</div>
+
+<div>
+    <form class="below" [formGroup]="profileForm">
+        <div class="prof"><img src="../../assets/Mask Group 2.png" alt=""></div>
+        <div class="form">
+            <div class="top-form">
+                <div class="form-group">
+                    <label for="Displayname">Display Name</label>
+                    <input type="text" id="displayname" class="form-control" formControlName="Displayname">
+                </div>
+                <div class="form-group">
+                    <label for="Firstname">First name</label>
+                    <input type="text" id="displayname" class="form-control" formControlName="Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="Lastname">Last name</label>
+                    <input type="text" id="displayname" class="form-control" formControlName="Lastname">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="about" id="About">About Yourself</label>
+                <textarea name="" id="aboutspace" cols="0" rows="5" class="form-control" formControlName="AboutYourself"></textarea>
+            </div>
+
+            <label class="area">Your Area of Interest</label>
+            <div class="interest">
+
+
+                <div class="form-group1">
+                    <input type="checkbox">
+                    <label>Developer</label>
+                </div>
+                <div class="form-group1">
+                    <input type="checkbox">
+                    <label>Designer</label>
+                </div>
+                <div class="form-group1">
+                    <input type="checkbox">
+                    <label>Project Manager</label>
+                </div>
+                <div class="form-group1">
+                    <input type="checkbox">
+                    <label>Sales</label>
+                </div>
+                <br>
+
+                <hr>
+                <div class="btn">
+                    <p>Are you a student or Professional</p>
+                    <div class="student">
+                        <input type="radio">
+                        <p>Student</p>
+                    </div>
+                    <div class="professional">
+                        <input type="radio">
+                        <p>Professional</p>
+                    </div>
+                </div>
+                <div class="pro-details" style="display: none;">
+                    <!-- <br> -->
+                    <p>How much of experience you have?</p>
+                    <div class="expe">
+                        <input type="radio">
+                        <p>0-5</p>
+                        <input type="radio">
+                        <p>5-10</p>
+                        <input type="radio">
+                        <p class="tenand">10 & above</p>
+                    </div>
+                    <br>
+                    <p>What is Your expertise</p>
+                    <div class="expt">
+                        <input type="radio">
+                        <p>java</p>
+                        <input type="radio">
+                        <p>react</p>
+                        <input type="radio">
+                        <p>Backend</p>
+                    </div>
+                    <br>
+                    <p>Mention Your Role</p>
+                    <input type="text" placeholder="Add placeholder text" class="exp">
+                </div>
+
+            </div>
+            <input type="button" class="save" value="SAVE">
+        </div>
+    </form>
+
+</div>
+<!-- <script>
+    function deselectableRadios(rootElement) {
+        if (!rootElement) rootElement = document;
+        if (!window.radioChecked) window.radioChecked = null;
+        window.radioClick = function(e) {
+            const obj = e.target;
+            if (e.keyCode) return obj.checked = e.keyCode != 32;
+            obj.checked = window.radioChecked != obj;
+            window.radioChecked = obj.checked ? obj : null;
+        }
+        rootElement.querySelectorAll("input[type='radio']").forEach(radio => {
+            radio.setAttribute("onclick", "radioClick(event)");
+            radio.setAttribute("onkeyup", "radioClick(event)");
+        });
+    }
+    deselectableRadios();
+    var coll = document.getElementsByClassName("btn");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script> -->

@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 15px;
+    font: normal normal medium 14px/18px Montserrat;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 60% 5% 10% 10% 5% 5% 5%;
+    background: #F5F5F5 10% 10% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.leftnav img {
+    width: 15%;
+    height: 90%;
+    margin-left: 13%;
+}
+
+.cart-logo {
+    width: 24px;
+    height: 17px;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.profile-logo {
+    width: 24px;
+    height: 24px;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.a-cart {
+    grid-column-start: 6;
+}
+
+.a-logo {
+    grid-column-start: 7;
+}
+
+.Wishlist {
+    grid-column-start: 4;
+}
+
+.Courses {
+    grid-column-start: 3;
+}
+
+.Courses,
+.Wishlist {
+    text-decoration: none;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+    margin: auto;
+}
+
+.black-bar {
+    display: grid;
+    grid-template-columns: 8% 27% 55% 10%;
+}
+
+.outer-profile {
+    grid-column-start: 2;
+    background-color: black;
+    margin-top: 5.5%;
+    p {
+        margin-top: 13%;
+    }
+}
+
+.profile {
+    background-color: black;
+    margin-top: 15%;
+    margin-left: 10%;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.react-logo {
+    grid-column-start: 3;
+    grid-row-start: 0;
+    background-color: black;
+    width: auto;
+    margin-top: 2.6%;
+}
+
+.below {
+    display: grid;
+    grid-template-columns: 8% 92%;
+    p {
+        margin-left: 10px;
+        grid-column-start: 2;
+        text-align: left;
+        font: normal normal 600 15px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #0F1317;
+        opacity: 1;
+    }
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 8% 62% 24% 6%;
+}
+
+.course-template {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    .upper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.react {
+    display: flex;
+    height: 90px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F4F4F4;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 1;
+    .grey-box {
+        width: 60px;
+        height: 60px;
+        margin: 15px 15px;
+        background-color: #F2F2F2;
+    }
+    .two {
+        width: 45%;
+        margin-top: 10px;
+        strong {
+            font-size: 13px;
+            color: #080808;
+            opacity: 1;
+            font: normal normal 600 14px/22px Montserrat;
+            // font-size: 11px;
+            // color: #080808;
+            // opacity: 1;
+            // font: normal normal 600 12px/22px Montserrat;
+        }
+        p {
+            font: normal normal 300 12px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+            padding: 5px;
+        }
+    }
+    .spa {
+        width: 15%;
+    }
+    .del {
+        display: flex;
+        width: 55%;
+        justify-content: space-evenly;
+        p {
+            font: normal normal bold 13px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #1873CE;
+            opacity: 1;
+            margin-top: 30px;
+        }
+        b {
+            font: normal normal bold 13px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+            margin-top: 35px;
+        }
+        a img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.fotter {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E0E0;
+    opacity: 1;
+    margin-top: 20px;
+    .rec-cou p {
+        font: normal normal 600 16px/22px Montserrat;
+        letter-spacing: 0px;
+        color: #4E4E4E;
+        opacity: 1;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .recc {
+        display: flex;
+        height: 90px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #F4F4F4;
+        border-radius: 0px 0px 4px 4px;
+        opacity: 1;
+        .grey-box {
+            width: 90px;
+            height: 61px;
+            margin: 15px 11px;
+            background-color: #F2F2F2;
+        }
+        .three {
+            width: 55%;
+            margin-top: 15px;
+            strong {
+                font-size: 13px;
+                color: #080808;
+                opacity: 1;
+                font: normal normal 600 14px/22px Montserrat;
+            }
+            .react1,
+            .react2 {
+                width: 25%;
+                margin-top: 5px;
+                padding: 0px 3px
+            }
+            .react1 {}
+        }
+        .Add {
+            width: 85px;
+            height: 25px;
+            background: #FF6738 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+            opacity: 1;
+            border: 0;
+            color: white;
+            font-size: 10px;
+        }
+        .joseph {
+            display: flex;
+            width: 18%;
+            justify-content: center;
+            align-items: center;
+            font: normal normal 300 10px/13px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+        }
+        .rest {
+            display: flex;
+            width: 65%;
+            justify-content: flex-start;
+            .star {
+                display: flex;
+                flex-wrap: wrap;
+                width: 20%;
+                height: 10%;
+                margin-top: 11%;
+                align-content: flex-end;
+            }
+            b {
+                width: 20%;
+                margin-top: 10%;
+                font: normal normal bold 12px/24px Montserrat;
+                letter-spacing: 0px;
+                color: #080808;
+                opacity: 1;
+                border: 0;
+            }
+            p {
+                width: 10%;
+                margin-top: 10%;
+                margin-left: 30px;
+            }
+            s {
+                margin-top: 11%;
+                width: 20%;
+                text-decoration: line-through;
+                font: normal normal 300 10px/19px Montserrat;
+                letter-spacing: 0px;
+                color: #080808;
+                opacity: 1;
+                margin-left: 10px;
+            }
+            input {
+                margin-top: 10%;
+            }
+            .arrow {
+                width: 10%;
+                height: 10%;
+                border: 2px solid #25282B;
+                opacity: 1;
+                border: 0;
+                margin-top: 12%;
+                margin-left: 5px;
+            }
+        }
+    }
+    .space {
+        height: 5%;
+    }
+}
+
+.cart {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #E0E0E0;
+    opacity: 1;
+    height: 31.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    p {
+        height: 20%;
+        font: normal normal bold 14px/22px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    b {
+        text-align: left;
+        font: normal normal 600 26px/37px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        height: 40%;
+        margin-left: 15px;
+    }
+    input {
+        width: 90%;
+        height: 23%;
+        margin-left: 15px;
+        background: #FF6738 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        opacity: 1;
+        border: 0;
+        color: white;
+        font: normal normal 600 12px/19px Montserrat;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .beck,
+    .black-bar-m,
+    .prof-m,
+    .react-logo-m,
+    .black-bar-m,
+    .top-m,
+    .save-m,
+    .twocourses2,
+    .fotter-m,
+    .cart-m {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .fotter {
+        display: none;
+    }
+}

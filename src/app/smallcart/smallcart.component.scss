@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 15px;
+    font: normal normal medium 14px/18px Montserrat;
+}
+
+label,
+#hamburger {
+    display: none;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 60% 5% 10% 10% 5% 5% 5%;
+    background: #F5F5F5 10% 10% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.leftnav img {
+    width: 15%;
+    height: 90%;
+    margin-left: 13%;
+}
+
+.cart-logo {
+    width: 24px;
+    height: 17px;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.profile-logo {
+    width: 24px;
+    height: 24px;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.a-cart {
+    grid-column-start: 6;
+}
+
+.a-logo {
+    grid-column-start: 7;
+}
+
+.Wishlist {
+    grid-column-start: 4;
+}
+
+.Courses {
+    grid-column-start: 3;
+}
+
+.Courses,
+.Wishlist {
+    text-decoration: none;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+    margin: auto;
+}
+
+.black-bar {
+    display: grid;
+    grid-template-columns: 8% 27% 55% 10%;
+}
+
+.outer-profile {
+    grid-column-start: 2;
+    background-color: black;
+    margin-top: 5.5%;
+    p {
+        margin-top: 8%;
+    }
+}
+
+.profile {
+    background-color: black;
+    margin-top: 15%;
+    margin-left: 10%;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.react-logo {
+    grid-column-start: 3;
+    grid-row-start: 0;
+    background-color: black;
+    width: auto;
+    margin-top: 2.6%;
+}
+
+.below {
+    display: grid;
+    grid-template-columns: 8% 47% 15% 20% 4% 6%;
+    p {
+        margin-left: 10px;
+        grid-column-start: 2;
+        text-align: left;
+        font: normal normal 600 15px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #0F1317;
+        opacity: 1;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }
+    input {
+        background: #EFF2FF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border: 0;
+        width: 100%;
+        height: 90%;
+    }
+    .search {
+        width: 90%;
+        height: 90%;
+        background: orange;
+    }
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+}
+
+#courses-template {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    .react {
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #F4F4F4;
+        border-radius: 0px 0px 4px 4px;
+        opacity: 1;
+        .grey-box {
+            width: 90px;
+            height: 61px;
+            margin: 15px 11px;
+            background-color: #F2F2F2;
+        }
+        .three {
+            width: 55%;
+            margin-top: 15px;
+            strong {
+                font-size: 13px;
+                color: #080808;
+                opacity: 1;
+                font: normal normal 600 14px/22px Montserrat;
+            }
+            .react1,
+            .react2 {
+                width: 25%;
+                margin-top: 5px;
+                padding: 0px 3px
+            }
+        }
+        .Add {
+            width: 85px;
+            height: 25px;
+            background: #FF6738 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+            opacity: 1;
+            border: 0;
+            color: white;
+            font-size: 10px;
+        }
+        .joseph {
+            display: flex;
+            width: 18%;
+            justify-content: center;
+            align-items: center;
+            font: normal normal 300 13px/13px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+        }
+        .rest {
+            display: flex;
+            width: 65%;
+            justify-content: flex-start;
+            .star {
+                display: flex;
+                flex-wrap: wrap;
+                width: 20%;
+                height: 20%;
+                margin-top: 13%;
+                margin-left: 40px;
+                align-content: flex-end;
+            }
+            b {
+                width: 14%;
+                margin-top: 13%;
+                font: normal normal bold 12px/24px Montserrat;
+                letter-spacing: 0px;
+                color: #080808;
+                opacity: 1;
+                border: 0;
+            }
+            p {
+                width: 20%;
+                margin-top: 13%;
+                // margin-left: 10px;
+            }
+            s {
+                margin-top: 13%;
+                width: 20%;
+                text-decoration: line-through;
+                font: normal normal 300 10px/19px Montserrat;
+                letter-spacing: 0px;
+                color: #080808;
+                opacity: 1
+            }
+            input {
+                margin-top: 13%;
+            }
+            .arrow {
+                width: 10%;
+                height: 10%;
+                border: 2px solid #25282B;
+                opacity: 1;
+                border: 0;
+                margin-top: 13%;
+                margin-left: 5px;
+                cursor: pointer;
+                img {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.fotter {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: flex-start;
+    img {
+        width: 5px;
+        margin-left: 10px;
+    }
+    p {
+        font-size: 10px;
+        margin-left: 15px;
+    }
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    p {
+        font: normal normal 600 14px/22px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        margin-top: 7%;
+    }
+    .rule {
+        margin-top: 10px;
+        border-width: 0.5px;
+        width: 90%;
+        opacity: 0.1;
+    }
+    .middle {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+        margin-top: 10px;
+        .grey-box {
+            float: left;
+            width: 20%;
+            height: 61px;
+            // margin-top: 10px;
+            background-color: #F2F2F2;
+        }
+        strong {
+            width: 70%;
+            margin-top: 5%;
+            font: normal normal bold 14px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+        }
+    }
+    .price {
+        b {
+            margin-left: 200px;
+            display: flex;
+            justify-content: flex-end;
+            align-content: flex-end;
+            font: normal normal bold 14px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+        }
+    }
+}
+
+.cart-end {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    padding: 20px;
+    justify-content: flex-end;
+    p {
+        font: normal normal medium 6px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        margin-left: 22px;
+    }
+    .rest {
+        display: flex;
+        width: 100%;
+        strong {
+            width: 50%;
+            font: normal normal bold 20px/34px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+            padding: 5px;
+            margin-left: 20px;
+        }
+        .check {
+            width: 50%;
+            font: normal normal 600 15px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #FF6738;
+            opacity: 1;
+            margin-bottom: 10px;
+            padding: 0px 15px 0px 0px;
+            margin-left: 10px;
+        }
+    }
+    .ruler {
+        margin-top: 10px;
+        border-width: 0.5px;
+        width: 90%;
+        opacity: 0.1;
+    }
+}

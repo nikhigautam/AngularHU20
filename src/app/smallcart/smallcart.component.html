@@ -1,0 +1,28 @@
+<div class="foot">
+    <p>YOUR CART DETAILS</p>
+    <div class="cart" *ngFor="let item of carry1; let i = index">
+
+        <hr class="rule" />
+        <div class="middle">
+            <div class="grey-box"></div>
+            <strong>{{item.courseDescription}}</strong>
+
+        </div>
+        <div class="price">
+            <b>{{item.price}}</b>
+        </div>
+        <hr class="rule" />
+
+
+    </div>
+    <div class="cart-end">
+        <hr class="ruler">
+        <p>Total Cart Value</p>
+        <div class="rest">
+
+            <strong>{{sum}}</strong>
+            <p class="check"> <a routerLink="cart-page">Go to checkout</a> </p>
+        </div>
+
+    </div>
+</div>

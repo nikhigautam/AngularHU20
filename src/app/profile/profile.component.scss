@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 15px;
+    font: normal normal medium 14px/18px Montserrat;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 60% 5% 10% 10% 5% 5% 5%;
+    background: #F5F5F5 10% 10% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.leftnav img {
+    width: 15%;
+    height: 90%;
+    margin-left: 3%;
+}
+
+.a-cart {
+    grid-column-start: 6;
+    margin: auto;
+}
+
+.a-logo {
+    grid-column-start: 7;
+}
+
+.cart-logo {
+    width: 24px;
+    height: 17px;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.profile-logo {
+    width: 24px;
+    height: 24px;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.Wishlist {
+    grid-column-start: 4;
+}
+
+.Courses {
+    grid-column-start: 3;
+}
+
+.Courses,
+.Wishlist {
+    text-decoration: none;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+    margin: auto;
+}
+
+.black-bar {
+    display: none;
+    display: grid;
+    grid-template-columns: 9% 30% 51% 10%;
+    .outer-profile {
+        grid-column-start: 2;
+        background-color: black;
+        margin-top: 5.5%;
+        p {
+            margin-top: 10%;
+        }
+    }
+    .profile {
+        background-color: black;
+        margin-top: 15%;
+        margin-left: 10%;
+        font: normal normal 600 20px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .react-logo {
+        grid-column-start: 3;
+        grid-row-start: 0;
+        background-color: black;
+        width: auto;
+        margin-top: 3.2%;
+    }
+}
+
+.below {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    margin-top: 2%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 835px;
+    height: 960px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.prof img {
+    width: 220px;
+    height: 200px;
+    margin-left: 30%
+}
+
+.top-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    label {
+        font: normal normal bold 12px/15px Montserrat;
+    }
+    input {
+        font: normal normal medium 14px/18px Montserrat;
+        letter-spacing: 0px;
+        background: #F7F8FF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border: 0;
+        margin: auto;
+        letter-spacing: 0px;
+        background: #F7F8FF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border: 0;
+        margin: auto;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topform p {
+    font: normal normal bold 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #454545;
+    opacity: 1;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.topentry {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topentry input {
+    width: 200px;
+    height: 40px;
+    font: normal normal medium 14px/18px Montserrat;
+    letter-spacing: 0px;
+    background: #F7F8FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0;
+    margin: auto;
+}
+
+.about {
+    font: normal normal bold 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #454545;
+    opacity: 1;
+    font-size: 12px;
+    padding: 15px 24px;
+}
+
+#About {
+    font: normal normal bold 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #454545;
+    opacity: 1;
+    font-size: 12px;
+    padding: 15px 24px;
+}
+
+#aboutspace {
+    margin-left: 22px;
+    border: 0;
+    width: 50%;
+    background: #F6F8FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0;
+}
+
+// .aboutspace textarea {
+//     width: 100%;
+//     height: 100%;
+//     background: #F6F8FF 0% 0% no-repeat padding-box;
+//     opacity: 1;
+//     border: 0;
+// }
+.form-group1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    input {
+        margin: 15px 10px 5px 20px;
+    }
+    label {
+        margin: auto;
+    }
+}
+
+.area {
+    margin-left: 15px;
+    margin-top: 15px;
+    font: normal normal bold 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #454545;
+    opacity: 1;
+}
+
+.interest label {
+    margin-left: 22px;
+    margin-top: 15px;
+    font: normal normal bold 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #454545;
+    opacity: 1;
+}
+
+.boxes {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.boxes input {
+    margin-top: 18px;
+    margin-left: 10px;
+    background: #E0E5F8 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.design,
+.developer,
+.sales,
+.project {
+    display: flex;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 14px;
+    font: normal normal medium 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #242222;
+    opacity: 1;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    p {
+        margin-left: 15px;
+    }
+}
+
+.btn input {
+    margin-top: 18px;
+    margin-left: 20px;
+    background: #E0E5F8 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.student,
+.professional {
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+}
+
+.pro-details {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E0E0;
+    opacity: 1;
+    margin-top: 3%;
+}
+
+.expe {
+    display: flex;
+    flex-direction: row;
+    margin-left: 22px;
+    p {
+        width: 10%;
+        height: 1%;
+    }
+    input {
+        margin-top: 2.2%;
+    }
+}
+
+.expt {
+    display: flex;
+    flex-direction: row;
+    margin-left: 22px;
+    p {
+        width: 10%;
+        height: 1%;
+        margin-top: 15x;
+    }
+    input {
+        margin-top: 2.2%;
+    }
+}
+
+.save {
+    margin-top: 5%;
+    margin-left: 80%;
+    width: 145px;
+    height: 40px;
+    background: #FF6738 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border: 0;
+    color: white;
+}
+
+.exp {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 200px;
+    height: 40px;
+    font: normal normal medium 14px/18px Montserrat;
+    letter-spacing: 2px;
+    background: #F7F8FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0;
+    text-align: left;
+}
+
+hr {
+    width: 95%;
+    margin-left: 1%;
+    margin-top: 4%;
+}
