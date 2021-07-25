@@ -26,8 +26,8 @@
                 <div class="spa">
                 </div>
                 <div class="del">
-                    <a href="">
-                        <p>Move to Wishlist</p>
+                    <a (click)="onwish(item)" style="cursor: pointer;">
+                        <p> Move to Wishlist</p>
                     </a>
                     <b>{{item.price}}</b>
                     <a class="delicon" (click)="ondel(item)" style="cursor: pointer;"><img src="../../assets/noun_Delete_3715928.svg" alt=""></a>
@@ -88,7 +88,7 @@
 
         <p>Total Amount</p>
         <b>{{sum}}</b>
-        <input type="button" value="CHECKOUT">
+        <input type="button" value="CHECKOUT" (click)="oncheckout()">
 
     </div>
 </div>

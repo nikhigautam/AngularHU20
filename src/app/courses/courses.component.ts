@@ -3,6 +3,7 @@ import { CoursesService } from '../courses.service';
 import  data from '../../Data/CourseList.json';
 import { WishlistService } from '../wishlist.service';
 import { NgModel } from '@angular/forms';
+import { AboutService } from '../about.service';
 
 @Component({
   selector: 'app-courses',
@@ -26,7 +27,10 @@ export class CoursesComponent implements OnInit {
   onWish(event) {
     this._wishlist.setWishlist(event)
   }
-  constructor(private _courses: CoursesService, private _wishlist : WishlistService) { }
+  onabout(event) {
+    this._about.setabout(event);
+  }
+  constructor(private _courses: CoursesService, private _wishlist : WishlistService, private _about : AboutService) { }
 
   ngOnInit()  {
     // this._courses.setCourses(this.carteevent)

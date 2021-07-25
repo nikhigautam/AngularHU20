@@ -21,7 +21,7 @@ import { AboutComponent } from './about/about.component';
 const routes = [
   {path: '', component: CoursesComponent},
   {path: 'courses-page', component: CoursesComponent},
-  {path: 'about-page', component: AboutComponent},
+  {path: 'courses-page/about-page', component: AboutComponent},
   {path: 'profile-page', component: ProfileComponent},
   {path: 'cart-page', component: CartComponent},
   {path: 'wishlist-page', component: WishlistComponent},

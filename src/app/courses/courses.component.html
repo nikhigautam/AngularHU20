@@ -48,7 +48,7 @@
 
                     <p><s>{{c.price}}</s> </p>
                     <input type="button" class="Add" value="ADD TO CART" (click)="onclick(c)">
-                    <a class="arrow" routerLink="/about-page"><img src="../../assets/Path 20.svg"></a>
+                    <a class="arrow" routerLink="/courses-page/about-page" (click)="onabout(c)"><img src="../../assets/Path 20.svg"></a>
                 </div>
             </div>
             <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>

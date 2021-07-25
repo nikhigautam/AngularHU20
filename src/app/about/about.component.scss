@@ -1,0 +1,31 @@
+.black-bar {
+    display: grid;
+    grid-template-columns: 8% 27% 55% 10%;
+}
+
+.outer-profile {
+    grid-column-start: 2;
+    background-color: black;
+    margin-top: 5.5%;
+    p {
+        margin-top: 8%;
+    }
+}
+
+.profile {
+    background-color: black;
+    margin-top: 15%;
+    margin-left: 10%;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.react-logo {
+    grid-column-start: 3;
+    grid-row-start: 0;
+    background-color: black;
+    width: auto;
+    margin-top: 2.6%;
+}

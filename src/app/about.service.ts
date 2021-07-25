@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
-export class WishlistService {
+export class AboutService {
 
   carte = [];
   constructor() { }
 
-  setWishlist(data) {
+  setabout(data) {
     let idx:Boolean = true;
     this.carte.forEach(function (value) {
       if(value === data) {
@@ -20,7 +20,7 @@ export class WishlistService {
       this.carte.push(data);
     }
   }
-  getWishlist() {
+  getabout() {
     return this.carte;
   }
 }
