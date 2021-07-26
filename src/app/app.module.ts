@@ -16,6 +16,9 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { SmallcartComponent } from './smallcart/smallcart.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { AboutComponent } from './about/about.component';
+import { CartwishComponent } from './cartwish/cartwish.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 
 const routes = [
@@ -27,6 +30,7 @@ const routes = [
   {path: 'wishlist-page', component: WishlistComponent},
   {path: 'courses-page/cart-page', component: CartComponent},
   {path: 'wishlist-page/cart-page', component: CartComponent},
+  {path: 'wishlist-page/about-page', component: AboutComponent},
 ];
 
 @NgModule({
@@ -39,7 +43,8 @@ const routes = [
     WishlistComponent,
     SmallcartComponent,
     SearchFilterPipe,
-    AboutComponent
+    AboutComponent,
+    CartwishComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,9 @@ const routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
+    FormsModule,
 
   ],
   providers: [CoursesService],

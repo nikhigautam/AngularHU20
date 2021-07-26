@@ -1,5 +1,6 @@
 <div class="foot">
     <p>YOUR CART DETAILS</p>
+    <p *ngIf="carry1.length === 0">Currently your cart is empty add items to your cart</p>
     <div class="cart" *ngFor="let item of carry1; let i = index">
 
         <hr class="rule" />

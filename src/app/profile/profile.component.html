@@ -8,17 +8,21 @@
 </div>
 
 <div>
-    <form class="below" [formGroup]="profileForm">
+    <form class="below" [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm.value)">
         <div class="prof"><img src="../../assets/Mask Group 2.png" alt=""></div>
         <div class="form">
             <div class="top-form">
                 <div class="form-group">
                     <label for="Displayname">Display Name</label>
                     <input type="text" id="displayname" class="form-control" formControlName="Displayname">
+                    <span *ngIf="!profileForm.get('Displayname').valid && profileForm.get('Displayname').touched" class="help-block">invalid Display name!
+                    </span>
                 </div>
                 <div class="form-group">
                     <label for="Firstname">First name</label>
                     <input type="text" id="displayname" class="form-control" formControlName="Firstname">
+                    <span *ngIf="!profileForm.get('Firstname').valid && profileForm.get('Firstname').touched" class="help-block">invalid First name!
+                    </span>
                 </div>
                 <div class="form-group">
                     <label for="Lastname">Last name</label>
@@ -29,6 +33,8 @@
             <div class="form-group">
                 <label for="about" id="About">About Yourself</label>
                 <textarea name="" id="aboutspace" cols="0" rows="5" class="form-control" formControlName="AboutYourself"></textarea>
+                <span *ngIf="profileForm.get('AboutYourself').hasError('maxlength')" class="help-block">please enter less than 200 chars!
+                </span>
             </div>
 
             <label class="area">Your Area of Interest</label>
@@ -57,28 +63,28 @@
                 <div class="btn">
                     <p>Are you a student or Professional</p>
                     <div class="student">
-                        <input type="radio">
+                        <input type="radio" [checked]="!choice" (click)="onchoose()">
                         <p>Student</p>
                     </div>
-                    <div class="professional">
-                        <input type="radio">
+                    <div class=" professional ">
+                        <input type="radio" formControlName="pro" [checked]="choice " (click)="onchoose()">
                         <p>Professional</p>
                     </div>
                 </div>
-                <div class="pro-details" style="display: none;">
+                <div class="pro-details " *ngIf="flag">
                     <!-- <br> -->
                     <p>How much of experience you have?</p>
-                    <div class="expe">
+                    <div class="expe ">
                         <input type="radio">
                         <p>0-5</p>
                         <input type="radio">
                         <p>5-10</p>
                         <input type="radio">
-                        <p class="tenand">10 & above</p>
+                        <p class="tenand ">10 & above</p>
                     </div>
                     <br>
                     <p>What is Your expertise</p>
-                    <div class="expt">
+                    <div class="expt ">
                         <input type="radio">
                         <p>java</p>
                         <input type="radio">
@@ -88,11 +94,13 @@
                     </div>
                     <br>
                     <p>Mention Your Role</p>
-                    <input type="text" placeholder="Add placeholder text" class="exp">
+                    <input type="text " placeholder="Add placeholder text " class="exp " formControlName="role ">
+                    <span *ngIf="profileForm.get( 'role').hasError( 'maxlength') " class="help-block ">please enter less than 200 chars!
+                    </span>
                 </div>
 
             </div>
-            <input type="button" class="save" value="SAVE">
+            <input type="button " class="save " value="SAVE ">
         </div>
     </form>
 
@@ -107,23 +115,23 @@
             obj.checked = window.radioChecked != obj;
             window.radioChecked = obj.checked ? obj : null;
         }
-        rootElement.querySelectorAll("input[type='radio']").forEach(radio => {
-            radio.setAttribute("onclick", "radioClick(event)");
-            radio.setAttribute("onkeyup", "radioClick(event)");
+        rootElement.querySelectorAll("input[type='radio' ] ").forEach(radio => {
+            radio.setAttribute("onclick ", "radioClick(event) ");
+            radio.setAttribute("onkeyup ", "radioClick(event) ");
         });
     }
     deselectableRadios();
-    var coll = document.getElementsByClassName("btn");
+    var coll = document.getElementsByClassName("btn ");
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
+        coll[i].addEventListener("click ", function() {
+            this.classList.toggle("active ");
             var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
+            if (content.style.display === "block ") {
+                content.style.display = "none ";
             } else {
-                content.style.display = "block";
+                content.style.display = "block ";
             }
         });
     }

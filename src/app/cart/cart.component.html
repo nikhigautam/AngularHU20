@@ -5,7 +5,7 @@
     <img class="react-logo" src="/asset/Mask Group 1.png" alt="">
     <div class="blank"></div>
 </div>
-<button type="button" class="btn btn-dark" (click)="onclick1()">Dark</button>
+<!-- <button type="button" class="btn btn-dark" (click)="onclick1()">Dark</button> -->
 <div class="below">
     <p class="twocourses">{{carry1.length}} Courses in Cart</p>
 </div>
@@ -15,7 +15,7 @@
     </div>
     <div class="course-template">
         <div class="upper">
-            <div class="react" *ngFor="let item of carry1; let i = index">
+            <div class="react" *ngFor="let item of carry1 | paginate: { itemsPerPage: 4, currentPage: p}; let i = index  ">
                 <div class="grey-box">
                 </div>
                 <div class="two">
@@ -34,49 +34,15 @@
                 </div>
 
             </div>
+            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel="" [autoHide]=true [directionLinks]=false></pagination-controls>
         </div>
 
         <div class="fotter">
             <div class="rec-cou">
                 <p>Recommended Courses</p>
             </div>
-            <div class="recc">
-                <div class="grey-box"></div>
-                <div class="three">
-                    <strong>Responsive Design Course XYZ How
-                  to design responsive templates</strong>
-                    <img class="react1" src="/asset/Group-37.svg" alt="">
-                    <img class="react2" src="/asset/Group-37.svg" alt="">
+            <app-cartwish></app-cartwish>
 
-                </div>
-                <p class="joseph">Joseph Marie</p>
-                <div class="rest">
-                    <img src="/asset/Group-35.svg" alt="" class="star">
-                    <b>Rs 563/-</b>
-                    <s>Rs 932/-</s>
-                    <input type="button" class="Add" value="ADD TO CART">
-                    <img src="/asset/Path-20.svg" class="arrow">
-                </div>
-            </div>
-
-            <div class="recc">
-                <div class="grey-box"></div>
-                <div class="three">
-                    <strong>Responsive Design Course XYZ How
-                  to design responsive templates</strong>
-                    <img class="react1" src="/asset/Group-37.svg" alt="">
-                    <img class="react2" src="/asset/Group-37.svg" alt="">
-
-                </div>
-                <p class="joseph">Joseph Marie</p>
-                <div class="rest">
-                    <img src="/asset/Group-35.svg" alt="" class="star">
-                    <b>Rs 563/-</b>
-                    <s>Rs 932/-</s>
-                    <input type="button" class="Add" value="ADD TO CART">
-                    <img src="/asset/Path-20.svg" class="arrow">
-                </div>
-            </div>
             <div class="space">
 
             </div>

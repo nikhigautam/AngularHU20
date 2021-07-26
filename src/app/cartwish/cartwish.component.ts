@@ -3,13 +3,14 @@ import { WishlistService } from '../wishlist.service';
 import { CoursesService } from '../courses.service';
 import { AboutService } from '../about.service';
 
+
 @Component({
-  selector: 'app-wishlist',
-  templateUrl: './wishlist.component.html',
-  styleUrls: ['./wishlist.component.scss']
+  selector: 'app-cartwish',
+  templateUrl: './cartwish.component.html',
+  styleUrls: ['./cartwish.component.scss']
 })
-export class WishlistComponent implements OnInit {
-  map = new Map();
+export class CartwishComponent implements OnInit {
+
   p: number = 1;
   wish = [];
   onclick1(event) {

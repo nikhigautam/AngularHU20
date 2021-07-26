@@ -361,24 +361,3 @@ input[type="text"]::placeholder {
         opacity: 1
     }
 }
-
-@media only screen and (min-width: 700px) {
-    .beck,
-    .black-bar-m,
-    .prof-m,
-    .react-logo-m,
-    .black-bar-m,
-    .top-m,
-    .save-m,
-    .twocourses2,
-    .fotter-m,
-    .cart-m {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .fotter {
-        display: none;
-    }
-}

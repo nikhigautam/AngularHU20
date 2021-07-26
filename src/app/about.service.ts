@@ -5,20 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class AboutService {
 
-  carte = [];
+  carte;
   constructor() { }
 
   setabout(data) {
-    let idx:Boolean = true;
-    this.carte.forEach(function (value) {
-      if(value === data) {
-        idx = false;
-        alert('data already exists')
-      }
-  });
-    if(idx === true){
-      this.carte.push(data);
-    }
+
+      this.carte = data;
   }
   getabout() {
     return this.carte;

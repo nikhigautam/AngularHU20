@@ -10,11 +10,16 @@
     <div class="below">
         <p>All Courses</p>
         <div class="filter">
-            <img src="../../assets/Group 71.svg" alt="Courses">
+            <a *ngIf="flag" (click)="flag = !flag" style="cursor: pointer;"><img src="../../assets/Group 71.svg" alt=""></a>
+            <a *ngIf="!flag" (click)="flag = !flag" style="cursor: pointer;"> <img src="../../assets/Group 71 (1).svg" alt="Courses"></a>
+            <button (click)="ascendic()" id="high" *ngIf="!flag" type="button" class="btn btn-light">HIGH TO LOW</button>
+            <button (click)="descendic()" id="low" *ngIf="!flag" type="button" class="btn btn-light">LOW TO HIGH</button>
         </div>
 
-        <!-- <input type="text" placeholder="Search Here">
-        <img class="search" src="../../assets/Group 35.svg"> -->
+        <div class="search">
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder=" Search Courses">
+        </div>
+
 
     </div>
     <div class="foot">
@@ -28,22 +33,32 @@
                 <li> {{c.id}}</li>
             </ul> -->
 
-            <div class="react" *ngFor="let c of courses | paginate: { itemsPerPage: 4, currentPage: p }">
+            <div class="react" *ngFor="let c of courses | paginate: { itemsPerPage: 4, currentPage: p }| filter:searchText">
                 <div class="grey-box"></div>
                 <div class="three">
                     <strong>
                       {{c.courseDescription}}
                   </strong>
-                    <div class="taggs" *ngFor="let i of c.tags">
-                        {{ i }}
+                    <div>
+                        <div *ngFor="let i of c.tags">
+                            <p>{{ i }}</p>
+                        </div>
                     </div>
+
 
                 </div>
                 <p class="joseph">
                     {{c.courseCreator}}
                 </p>
                 <div class="rest">
-                    <a class="star" (click)="onWish(c)" style="cursor: pointer;"><img src="../../assets/Path 28.svg" alt="" class=""></a>
+
+                    <a class="star" *ngIf=(!exists(c.id)) (click)="onWish(c)" style="cursor: pointer;"><img src="../../assets/Path 28.svg"></a>
+
+
+                    <a *ngIf=(exists(c.id)) class="star" (click)="onDel(c)" style="cursor: pointer;"><img src="../../assets/Path 28-4.svg"></a>
+
+
+
                     <b>{{c.price - (c.price*c.discount)/100}}</b>
 
                     <p><s>{{c.price}}</s> </p>
@@ -51,7 +66,7 @@
                     <a class="arrow" routerLink="/courses-page/about-page" (click)="onabout(c)"><img src="../../assets/Path 20.svg"></a>
                 </div>
             </div>
-            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+            <pagination-controls class="page" (pageChange)="p = $event" previousLabel="" nextLabel="" [autoHide]=true [directionLinks]=false></pagination-controls>
             <!-- <div class="fotter">
                 <ul class="pagination pagination-sm">
                     <li class="page-item active" aria-current="page">

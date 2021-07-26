@@ -9,6 +9,7 @@ import { WishlistService } from '../wishlist.service';
 })
 export class CartComponent implements OnInit {
 
+  p:number = 1;
   sum = 0;
   idx:any = 0;
   courses1:any;
@@ -32,8 +33,9 @@ export class CartComponent implements OnInit {
   }
   oncheckout() {
     alert('order sucessfully placed');
-    this.carry1 = [];
+    this.carry1= [];
     this.sum = 0;
+    this._share.clearCourses(this.carry1);
   }
   constructor(private _share: CoursesService, private _wishlist : WishlistService) { }
 

@@ -107,7 +107,6 @@ label,
 .below {
     display: grid;
     grid-template-columns: 8% 47% 15% 20% 4% 6%;
-    position: relative;
     p {
         margin-left: 10px;
         grid-column-start: 2;
@@ -129,27 +128,78 @@ label,
         height: 90%;
     }
     .search {
-        width: 300px;
-        height: 40px;
+        width: 90%;
+        height: 90%;
         background: orange;
-    }
-    #high {
-        position: relative;
-        bottom: 130px;
-        width: 170px;
-        height: 45px;
-    }
-    #low {
-        position: relative;
-        bottom: 125px;
-        width: 170px;
-        height: 45px;
     }
 }
 
 .foot {
     display: grid;
     grid-template-columns: 8% 62% 24% 6%;
+}
+
+.react {
+    display: flex;
+    height: 90px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F4F4F4;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 1;
+    .grey-box {
+        width: 60px;
+        height: 60px;
+        margin: 15px 15px;
+        background-color: #F2F2F2;
+    }
+    .two {
+        width: 45%;
+        margin-top: 10px;
+        strong {
+            font-size: 13px;
+            color: #080808;
+            opacity: 1;
+            font: normal normal 600 14px/22px Montserrat;
+            // font-size: 11px;
+            // color: #080808;
+            // opacity: 1;
+            // font: normal normal 600 12px/22px Montserrat;
+        }
+        p {
+            font: normal normal 300 12px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+            padding: 5px;
+        }
+    }
+    .spa {
+        width: 15%;
+    }
+    .del {
+        display: flex;
+        width: 55%;
+        justify-content: space-evenly;
+        p {
+            font: normal normal bold 13px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #1873CE;
+            opacity: 1;
+            margin-top: 30px;
+        }
+        b {
+            font: normal normal bold 13px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #080808;
+            opacity: 1;
+            margin-top: 35px;
+        }
+        a img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 #courses-template {
@@ -182,9 +232,11 @@ label,
                 opacity: 1;
                 font: normal normal 600 14px/22px Montserrat;
             }
-            .taggs {
-                display: flex;
-                flex-direction: row;
+            .react1,
+            .react2 {
+                width: 25%;
+                margin-top: 5px;
+                padding: 0px 3px
             }
         }
         .Add {
@@ -374,13 +426,4 @@ label,
             opacity: 0.1;
         }
     }
-}
-
-.page {
-    border-radius: 100px;
-    color: black;
-}
-
-.pagination ::ng-deep .ngx-pagination .current {
-    background: red;
 }

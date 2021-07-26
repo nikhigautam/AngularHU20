@@ -26,4 +26,7 @@ export class CoursesService {
   getCourses() {
     return this.carte;
   }
+  clearCourses(data) {
+    this.carte = data;
+  }
 }

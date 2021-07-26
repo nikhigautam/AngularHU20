@@ -7,6 +7,48 @@
         <div class="blank"></div>
     </div>
 
-    <p>{{paths}} > {{carry1.courseDescription}}</p>
+    <div class="path">
+        <a routerLink="/courses-page" style="cursor: pointer;">{{paths}}</a>
+
+        <p> > </p>
+        <p>{{ carry1.courseDescription }}</p>
+    </div>
+    <div class="des">
+        <p>{{carry1.courseDescription}}</p>
+        <p class="small">{{carry1.courseDescription}}</p>
+        <p class="name">{{carry1.courseCreator}}</p>
+        <div class="taggs">
+            <p *ngFor="let c of carry1.tags"> {{c}}</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/hLsf9et3iyE" frameborder="0" width="420" height="300"></iframe>
+
+
+        </div>
+    </div>
+    <div class="below">
+        <div class="lorem">
+            <b>Course details</b>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia cumque dolores et nemo ab, quidem quam quo odio suscipit nisi rerum aut distinctio velit veritatis iste quis harum explicabo? Aperiam totam assumenda ea excepturi enim,
+                ratione odit natus praesentium quidem repellat labore, alias vitae deleniti similique blanditiis impedit vero illum eum deserunt esse soluta. Adipisci enim labore repellat ducimus. Unde dolorem, magni debitis corporis corrupti distinctio
+                illo assumenda officia. Vero ipsa et, dolorem asperiores perspiciatis cumque, voluptas veritatis adipisci nesciunt incidunt dolor unde molestiae optio facere omnis excepturi culpa! Repudiandae voluptate ipsum sequi laboriosam doloribus
+                error aliquid, laborum dolorum eveniet sed. Qui enim impedit veritatis libero voluptas quo ab cumque, possimus expedita nihil repellendus, inventore officia cupiditate! Possimus, corrupti.</p>
+
+        </div>
+        <div class="details">
+            <b>Rs {{carry1.price - (carry1.price*carry1.discount)/100}} /-</b>
+            <s>Rs {{carry1.price}} /-</s>
+            <div class="timer">
+                <img src="../../assets/clock.svg" alt="">
+                <p>{{ minutes}} left for this price</p>
+            </div>
+            <div class="buttons">
+                <input type="button" value="Add to cart" (click)="addtocart(carry1)">
+                <input type="button" value="Move to wishlist" (click)="addtowish(carry1)">
+            </div>
+        </div>
+    </div>
+
+
 
 </div>

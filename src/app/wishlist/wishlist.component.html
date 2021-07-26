@@ -41,19 +41,19 @@
                 <p class="joseph">
                     {{c.courseCreator}}
                 </p>
-                <div class="rest">
-                    <div class="rest">
-                        <!-- <a class="star" (click)="onwish(c)" style="cursor: pointer;"><img src="../../assets/Path 28.svg" alt="" class=""></a> -->
-                        <b>{{c.price - (c.price*c.discount)/100}}</b>
 
-                        <p><s>{{c.price}}</s> </p>
-                        <input type="button" class="Add" value="ADD TO CART" (click)="onclick1(c)">
-                        <a class="delicon" (click)="ondel(c)" style="cursor: pointer;"><img src="../../assets/noun_Delete_3715928.svg" alt=""></a>
-                        <a class="arrow" routerLink="/courses-page/about-page" (click)="onabout(c)"><img src="../../assets/Path 20.svg"></a>
-                    </div>
+                <div class="rest">
+                    <!-- <a class="star" (click)="onwish(c)" style="cursor: pointer;"><img src="../../assets/Path 28.svg" alt="" class=""></a> -->
+                    <b>{{c.price - (c.price*c.discount)/100}}</b>
+
+                    <p><s>{{c.price}}</s> </p>
+                    <input type="button" class="Add" value="ADD TO CART" (click)="onclick1(c)">
+                    <a class="delicon" (click)="ondel(c)" style="cursor: pointer;"><img src="../../assets/noun_Delete_3715928.svg" alt=""></a>
+                    <a class="arrow" routerLink="about-page" (click)="onabout(c)"><img src="../../assets/Path 20.svg"></a>
                 </div>
+
             </div>
-            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel="" [autoHide]=true [directionLinks]=false></pagination-controls>
             <!-- <div class="fotter">
               <ul class="pagination pagination-sm">
                   <li class="page-item active" aria-current="page">
