@@ -27,6 +27,7 @@ export class CoursesComponent implements OnInit {
     // this.carry.push(event);
     // console.log(this.carry);
     this._courses.setCourses(event)
+
   }
   onWish(event) {
     this._wishlist.setWishlist(event);

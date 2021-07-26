@@ -23,6 +23,9 @@ export class ProfileComponent implements OnInit {
     this.flag = !this.flag;
     this.choice = !this.choice;
   }
+  onsave() {
+    alert('your profile was saved');
+  }
   constructor() {
   }
 

@@ -21,6 +21,7 @@ export class CoursesService {
   });
     if(idx === true){
       this.carte.push(data);
+      alert('Course added to cart sucessfully');
     }
   }
   getCourses() {

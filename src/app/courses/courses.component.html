@@ -66,21 +66,11 @@
                     <a class="arrow" routerLink="/courses-page/about-page" (click)="onabout(c)"><img src="../../assets/Path 20.svg"></a>
                 </div>
             </div>
-            <pagination-controls class="page" (pageChange)="p = $event" previousLabel="" nextLabel="" [autoHide]=true [directionLinks]=false></pagination-controls>
-            <!-- <div class="fotter">
-                <ul class="pagination pagination-sm">
-                    <li class="page-item active" aria-current="page">
-                        <span class="page-link">1</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                </ul>
-            </div> -->
+            <pagination-controls class="pagination" (pageChange)="p = $event" previousLabel="" nextLabel="" [autoHide]=true [directionLinks]=false></pagination-controls>
+
         </div>
         <div class="cart">
-            <!-- <p>YOUR CART DETAILS</p>
-            <hr class="rule" /> -->
-            <!-- <app-cart></app-cart> -->
+
             <app-smallcart></app-smallcart>
 
         </div>
