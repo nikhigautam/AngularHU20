@@ -11,6 +11,7 @@ import { WishlistService } from '../wishlist.service';
 })
 export class AboutComponent implements OnInit {
 
+  flag:boolean = true;
   public href: string = "";
   public paths: string = "";
   carry1;
@@ -33,6 +34,7 @@ export class AboutComponent implements OnInit {
       }
       else {
         this.paths = "My wishlist";
+        this.flag = false;
       }
   this.currentTime = new Date();
   this.expireTime = new Date(this.carry1.discountValidTill);

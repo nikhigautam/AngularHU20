@@ -8,7 +8,8 @@
     </div>
 
     <div class="path">
-        <a routerLink="/courses-page" style="cursor: pointer;">{{paths}}</a>
+        <a *ngIf="flag" routerLink="/courses-page" style="cursor: pointer;">{{paths}}</a>
+        <a *ngIf="!flag" routerLink="/wishlist-page" style="cursor: pointer;">{{paths}}</a>
 
         <p> > </p>
         <p>{{ carry1.courseDescription }}</p>
