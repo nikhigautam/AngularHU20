@@ -9,7 +9,8 @@ import { AboutService } from '../about.service';
   styleUrls: ['./wishlist.component.scss']
 })
 export class WishlistComponent implements OnInit {
-  map = new Map();
+
+
   p: number = 1;
   wish = [];
   onclick1(event) {
