@@ -13,6 +13,7 @@ export class WishlistService {
     this.carte.forEach(function (value) {
       if(value === data) {
         idx = false;
+        alert('data already exists');
       }
   });
     if(idx === true){

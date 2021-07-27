@@ -47,5 +47,6 @@ export class ProfileComponent implements OnInit {
   }
   onSubmit(data) {
     console.log(this.profileForm);
+    this.profileForm.reset();
   }
 }
